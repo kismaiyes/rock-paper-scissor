@@ -1,0 +1,16 @@
+* {
+    align-content: center;
+    text-align: center;
+}
+
+.selection-container {
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    justify-content: space-between;
+}
+
+img {
+    width: 240px;
+}
