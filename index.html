@@ -5,15 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissor</title>
+    <title>Rock Paper Scissors</title>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <h1>ROCK-PAPER-SCISSOR</h1>
-    <div class="selection-container">
-        <button><img src="images/alpine-landscape-rock-rubble-01g-al1.svg" alt="Rock"></button>
-        <button><img src="images/paper-sheet-png-background.png" alt="Paper"></button>
-        <button><img src="images/Orange-scissors.svg" alt="Scissor"></button>
+    <div class="selections">
+        <button class="selection" data-selection="rock"><img id="rock-btn" src="images/rock.svg" alt="Rock"></button>
+        <button class="selection" data-selection="paper"><img id="paper-btn" src="images/paper.png" alt="Paper"></button>
+        <button class="selection" data-selection="scissors"><img id="scissors-btn" src="images/scissors.svg" alt="Scissors"></button>
+    </div>
+    <div class="results">
+        <div>
+            YOU
+            <span class="score" player-score>0</span>
+        </div>
+        <div data-final-column>
+            CPU
+            <span class="score" computer-score>0</span> 
+        </div>
+        <!-- <div class="result-selection winner"><img src="images/alpine-landscape-rock-rubble-01g-al1.svg" alt="Rock"></div>
+        <div class="result-selection"><img src="images/Orange-scissors.svg" alt="Scissor"></div> -->
     </div>
         
 </body>
